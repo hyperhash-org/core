@@ -7,4 +7,4 @@ permissions: { contents: read, packages: write }
 jobs:
   image:
     uses: hyperhash-org/.github/.github/workflows/docker-build.yml@main
-    with: { image-name: tp }
+    with: { image-name: pool }
