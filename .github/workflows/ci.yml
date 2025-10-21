@@ -1,9 +1,7 @@
 name: ci
 on: [push, pull_request]
-permissions:
-  contents: read
+permissions: { contents: read }
 jobs:
   build:
     uses: hyperhash-org/.github/.github/workflows/rust-build.yml@main
-    with:
-      run-tests: true
+    with: { run-tests: true }
