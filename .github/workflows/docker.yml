@@ -1,0 +1,11 @@
+name: docker
+on:
+  push:
+    branches: [ main ]
+  push:
+    tags: [ 'v*.*.*' ]
+jobs:
+  image:
+    uses: hyperhash-org/.github/.github/workflows/docker-build.yml@main
+    with:
+      image-name: core
