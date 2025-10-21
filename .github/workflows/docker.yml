@@ -1,9 +1,11 @@
 name: docker
 on:
   push:
-    branches: [ main ]
-  push:
-    tags: [ 'v*.*.*' ]
+    branches: [ "main" ]
+    tags: [ "v*.*.*" ]
+permissions:
+  contents: read
+  packages: write
 jobs:
   image:
     uses: hyperhash-org/.github/.github/workflows/docker-build.yml@main
